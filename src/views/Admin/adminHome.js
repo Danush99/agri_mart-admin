@@ -70,7 +70,7 @@ export function AdminHome() {
             <li class="nav-item">
                 <a class="nav-link">
                     <i class="fas fa-fw fa-user-plus"></i>
-                    <span>Add an OFFICER</span>
+                    <span>Add an officer</span>
                 </a>
             </li>
             </Link>
@@ -79,7 +79,7 @@ export function AdminHome() {
             <li class="nav-item">
                 <a class="nav-link">
                     <i class="fas fa-fw fa-user-pen"></i>
-                    <span>Manage Officers</span>
+                    <span>Manage officers</span>
                 </a>
             </li>
             </Link>

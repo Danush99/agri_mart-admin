@@ -138,7 +138,7 @@ export function ManageOfficer() {
           <div id="content-wrapper" class="d-flex flex-column">
               <div id="content">
                   {/*Header */}
-                  <Header userDetails={adminDetails} header={"Farmers"}/>
+                  <Header userDetails={adminDetails} header={"Officer Manage"}/>
                   <div class="container-fluid">
                       {/*page content */}
                 <div>

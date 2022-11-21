@@ -4,11 +4,14 @@ import token from "./Token";
 
 //API endpoint
 //const APIEndpoint = config.DOMAIN_NAME + '/auth';
-const APIEndpoint = "http://localhost:5000/";
+const APIEndpoint = "https://agri-mart-web-server.onrender.com/";
+//const APIEndpoint = process.env.backend
+
 
 const register = (data) =>
   //console.log(data);
   new Promise((resolve, reject) => {
+    console.log(APIEndpoint)
     console.log("data ",data);
     const headers= {Authorization: `Bearer ${token.getAccessToken()}`}
     const url = APIEndpoint+'admin/register';
@@ -43,15 +46,18 @@ const login = async (data) =>
   axios
   .post(url, data)
   .then((res) => {
+    console.log("sadsad",res);
     
   if (res.request.status === 200 || res.request.status === 201) {
       token.setAccessToken(res.data.access_token);
       resolve(res.data.user);
   } else {
+      console.log("aasffasd")
       reject(res.data.message);
   }
   })
   .catch((err) => {
+    console.log("catch"+err);
     reject(err);
   });
 });

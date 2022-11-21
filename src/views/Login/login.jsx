@@ -54,6 +54,7 @@ export function Login() {
         }
       })
       .catch((err) => {
+        console.log("eror")
         console.log(err.response.request.status);
         setAlertType("alert alert-danger");
         setAlertMessage("");

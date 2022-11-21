@@ -78,9 +78,9 @@ export function OfficerHome(){
 
             <Link state={{officer:officerDetails}} to={"/officer/register"}>
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link">
                     <i class="fas fa-person-circle-plus"></i>
-                    <span>Verify Farmers</span>
+                    <span>Verify farmers</span>
                 </a>
             </li>
             </Link>

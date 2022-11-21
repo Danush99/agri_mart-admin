@@ -11,7 +11,7 @@ export function Farmer(props){
     useEffect( ()=> {
         setValues(farmerdetails)
         const birthday = farmerdetails.birthday
-        settoStringBirthday(birthday.substring(0,10))
+        //settoStringBirthday(birthday.substring(0,10))
       }, [farmerdetails]);
     return(
     <div>

@@ -3,7 +3,8 @@ import token from "./Token";
 
 //API endpoint
 //const APIEndpoint = config.DOMAIN_NAME + '/auth';
-const APIEndpoint = "http://localhost:5000/";
+const APIEndpoint = "https://agri-mart-web-server.onrender.com/";
+//const APIEndpoint = process.env.backend
 
 const getAdmin = (data) => 
   new Promise((resolve, reject) => {
